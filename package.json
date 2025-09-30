@@ -1,0 +1,64 @@
+{
+  "name": "logicam-control",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A modern terminal UI for controlling Logitech webcam settings on Linux",
+  "main": "dist/index.js",
+  "bin": {
+    "logicam": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webcam",
+    "logitech",
+    "c920",
+    "camera",
+    "video",
+    "v4l2",
+    "linux",
+    "tui",
+    "terminal",
+    "cli",
+    "control",
+    "settings"
+  ],
+  "author": "Hoang Tran <thhoang.tr@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangtrann/logicam-control.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hoangtrann/logicam-control/issues"
+  },
+  "homepage": "https://github.com/hoangtrann/logicam-control#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "os": [
+    "linux"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/react": "^18.3.18",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "ink": "^5.1.0",
+    "react": "^18.3.1"
+  }
+}

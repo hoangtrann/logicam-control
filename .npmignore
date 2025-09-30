@@ -1,0 +1,36 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Development dependencies
+node_modules/
+
+# Build artifacts that shouldn't be published
+*.log
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+
+# Test files
+test/
+tests/
+*.test.ts
+*.spec.ts
+
+# Documentation that's not needed
+docs/
+.github/
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Only dist/ and essential files should be published
